@@ -15,6 +15,8 @@ import { CheckboxNode } from "./nodes/checkBoxNode";
 import { ColorPickerNode } from "./nodes/colorPickerNode";
 import { MultiplierNode } from "./nodes/multiplierNode";
 import { StringConcatenateNode } from "./nodes/stringConcatenateNode";
+import { ReverseStringNode } from "./nodes/reverseStringNode";
+
 
 import "reactflow/dist/style.css";
 
@@ -30,6 +32,7 @@ const nodeTypes = {
   stringConcatenate: StringConcatenateNode,
   colorPicker: ColorPickerNode,
   multiplierNode: MultiplierNode,
+  reverseString: ReverseStringNode,
 };
 
 const selector = (state) => ({

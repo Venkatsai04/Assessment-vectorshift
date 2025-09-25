@@ -32,6 +32,8 @@ export const PipelineToolbar = () => {
         <DraggableNode type="stringConcatenate" label="Concatenate" icon={<VscSymbolString />} />
         <DraggableNode type="colorPicker" label="Color" icon={<IoColorPaletteOutline />} />
         <DraggableNode type="multiplierNode" label="Multiplier" icon={<TbMultiplier2X />} />
+        <DraggableNode type="reverseString" label="Reverse String" icon={"🔄"} // or choose any icon you like
+        />
       </div>
     </div>
   );
