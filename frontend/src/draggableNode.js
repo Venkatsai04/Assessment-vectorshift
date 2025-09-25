@@ -19,6 +19,7 @@ export const DraggableNode = ({ type, label, icon }) => {
         borderImageSlice: 1,
         borderImageSource: "linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet)",
         boxShadow: "0 4px 12px rgba(0,0,0,0.5)",
+        borderRadius: '10px'
       }}
       onDragStart={(event) => onDragStart(event, type)}
       onDragEnd={(event) => (event.target.style.cursor = "grab")}
