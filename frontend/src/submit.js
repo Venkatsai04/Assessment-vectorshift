@@ -72,7 +72,11 @@ export const SubmitButton = () => {
 
   return (
     <div className="flex items-center justify-center fixed bottom-10 left-0 right-0">
-      <Button onClick={handleSubmit} color="primary" size="lg" type="submit">
+      <Button
+        onClick={handleSubmit}
+        size="lg"
+        style={{ backgroundColor: "rgb(100,150,250)", color: "white" }}
+      >
         Submit
       </Button>
       <ToastContainer
@@ -89,5 +93,6 @@ export const SubmitButton = () => {
         transition={Bounce}
       />
     </div>
+
   );
 };

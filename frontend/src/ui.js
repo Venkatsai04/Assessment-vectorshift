@@ -102,30 +102,28 @@ export const PipelineUI = () => {
 
   return (
     <>
-      <div ref={reactFlowWrapper} style={{ width: "100wv", height: "88vh" }}>
-        <ReactFlow
-          nodes={nodes}
-          edges={edges}
-          onNodesChange={onNodesChange}
-          onEdgesChange={onEdgesChange}
-          onConnect={onConnect}
-          onDrop={onDrop}
-          onDragOver={onDragOver}
-          onInit={setReactFlowInstance}
-          nodeTypes={nodeTypes}
-          proOptions={proOptions}
-          snapGrid={[gridSize, gridSize]}
-          connectionLineType="smoothstep"
-          connectionLineStyle={{
-            stroke: "#6B46C1",
-            strokeWidth: 2,
-          }}
-        >
-          <Background color="#aaa" gap={gridSize} size={1.5} />
-          <Controls />
-          <MiniMap />
-        </ReactFlow>
-      </div>
+     <div ref={reactFlowWrapper} style={{ width: "100wv", height: "88vh", backgroundColor: "rgb(18,18,18)" }}>
+  <ReactFlow
+    nodes={nodes}
+    edges={edges}
+    onNodesChange={onNodesChange}
+    onEdgesChange={onEdgesChange}
+    onConnect={onConnect}
+    onDrop={onDrop}
+    onDragOver={onDragOver}
+    onInit={setReactFlowInstance}
+    nodeTypes={nodeTypes}
+    proOptions={proOptions}
+    snapGrid={[gridSize, gridSize]}
+    connectionLineType="smoothstep"
+    connectionLineStyle={{ stroke: "rgb(100,150,250)", strokeWidth: 2 }}
+  >
+    <Background color="rgb(60,60,60)" gap={gridSize} size={1.5} />
+    <Controls />
+    <MiniMap nodeStrokeColor={(n) => "rgb(100,150,250)"} nodeColor={(n) => "rgb(50,50,50)"} />
+  </ReactFlow>
+</div>
+
     </>
   );
 };
